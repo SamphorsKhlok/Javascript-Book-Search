@@ -1,0 +1,21 @@
+<div class="col-sx-12 col-s-6 col-m-6 col-l-4">
+  <div class="col-sx-6 col-s-12 col-m-12 col-l-12 bookImage">
+    <a (click)="openDialog(book)">
+      <img src="{{book.cover.small}}">
+    </a>
+  </div>
+  <div class="col-sx-6 col-s-12 col-m-12 col-l-12 bookDetail">
+    <div>
+      <h3>{{book.title}}</h3>
+    </div>
+    <div class="bookDetailLower">
+      <h4>By {{book.author}}</h4>
+      <p>Release Date: {{book.releaseDate}}</p>
+      <p>Pages: {{book.pages}}</p>
+      <p>Link: <a href="{{book.link}}" target="_blank">Shop</a></p>
+    </div>
+  </div>
+</div>
+
+
+

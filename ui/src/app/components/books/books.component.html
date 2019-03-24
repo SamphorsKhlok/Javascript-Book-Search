@@ -1,0 +1,23 @@
+<aside class="col-sx-12 col-s-12 col-m-4 col-l-3">
+  <h2>Sort by</h2>
+  <ul>
+    <li><input id="pages" name="sort" type="radio" (click)="onSelect($event)" [checked]="sortBy == 'pages'" value="pages"> number of pages</li>
+    <li><input id="releaseDate" name="sort" type="radio" (click)="onSelect($event)" [checked]="sortBy == 'releaseDate'" value="releaseDate"> release date</li>
+    <li><input id="author" name="sort" type="radio" (click)="onSelect($event)" [checked]="sortBy == 'author'" value="author"> surname of the author</li>
+  </ul>
+  <hr class="hrFilter">
+  <h2>Show only</h2>
+  <ul>
+    <li>Above <input id="filter" type="text" (keyup)="onKeyup($event)" [value]="filterValue"> pages</li>
+  </ul>
+  <hr class="hrFilter">
+  <div style="text-align: center">
+    <button id="reset" mat-raised-button (click)="reset()">Reset</button>
+  </div>
+
+</aside>
+<main class="col-sx-12 col-s-12 col-m-8 col-l-9">
+  <app-book *ngFor="let book of (books | filter: [filterValue, sortBy])" [book]="book"></app-book>
+</main>
+
+
