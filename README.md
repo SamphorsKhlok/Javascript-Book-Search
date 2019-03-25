@@ -1,8 +1,8 @@
-- Webapi is node.js Express to provide service for json respond,run using npm start using port 3000
-- UI is written in Angular 7 using Angular material, run using ng serve --aot
-- A few components are scripted with unit test i.e AppComponent, BooksComponent, FilterPipe. run using ng test
-- Popup are written using Angular material CDK dialog
-- e2e test is written under e2e folder, run using ng e2e
-- some of the screenshots are attached in the screenshot folder
-- tested with Chrome, Safari, and Firefox (IE11 not tested. if needed polyfill need to enable first)
+- WebAPI is written using ExpressJS (Node.JS) to provide service for UI, install all packages first ```npm install```,then to run use ```npm start``` using default port 3000
+- UI is written in Angular 7 with Angular material,install all packages first ```npm install``` then to run use ```ng serve --aot```
+- A few components are included with unit testing scripts i.e AppComponent, BooksComponent, FilterPipe. To run use ```ng test``` to see all test results
+- Popup are written using Angular material CDK Dialog
+- e2e test is written under e2e folder. To run use ```ng e2e```. You can also check the screenshot folder for all the results
+- Some of the screenshots are attached in the screenshot folder
+- Application was tested in Chrome, Safari, and Firefox (IE11 not tested. if needed, polyfill needs to be enabled first)
 
